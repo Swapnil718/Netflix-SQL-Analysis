@@ -19,7 +19,7 @@ The goal of this project is to answer 15 business-driven questions related to co
 
 ## 📂 Folder Structure (Recommended)
 Netflix-SQL-Analysis/
-│
+
 ├── data/
 │ └── netflix_titles.csv
 
