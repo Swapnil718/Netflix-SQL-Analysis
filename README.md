@@ -18,7 +18,17 @@ The goal of this project is to answer 15 business-driven questions related to co
 ---
 
 ## 📂 Folder Structure (Recommended)
----
+Netflix-SQL-Analysis/
+│
+├── data/
+│ └── netflix_titles.csv
+│
+├── sql/
+│ └── queries.sql <-- (Optional: Store all SQL queries here)
+│
+└── README.md <-- Project Documentation
+
+----
 
 ## 📊 Dataset Overview – Columns Used
 | Column         | Description                          |
@@ -57,3 +67,36 @@ The goal of this project is to answer 15 business-driven questions related to co
 1️⃣5️⃣ Classify content as **‘Good’ or ‘Bad’** based on keywords (`kill`, `violence`) in description  
 
 ---
+## 🧠 SQL Concepts Applied
+SQL Concept	Usage in Project
+CTEs (WITH)	Ranking ratings, year-based aggregation
+Window Functions	Most common rating per category
+String Functions	Splitting genres, actors, countries
+Date Parsing	Last 5 years content
+Conditional Logic (CASE)	Content labels: Good vs Bad
+
+---
+
+## How to Run This Project (MySQL)
+
+Create Database
+
+CREATE DATABASE netflix_db;
+USE netflix_db;
+
+
+Import CSV into the netflix_titles table
+(Using Workbench Table Data Import Wizard or LOAD DATA INFILE)
+
+Create the Cleaned View
+(Handles date parsing, duration split, season extraction)
+
+CREATE OR REPLACE VIEW netflix_clean AS
+SELECT ... (Full code included in queries)
+
+Run SQL Queries to Answer Business Questions
+
+----
+## 🏁 Conclusion
+
+This project demonstrates real-world business intelligence using SQL on streaming industry data. From content classification to country-based insights, it showcases strong analytical abilities and problem-solving skills applicable to roles in Data Analytics, BI, and Data Engineering.
