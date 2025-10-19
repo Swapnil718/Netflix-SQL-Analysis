@@ -22,10 +22,10 @@ Netflix-SQL-Analysis/
 │
 ├── data/
 │ └── netflix_titles.csv
-│
+
 ├── sql/
 │ └── queries.sql <-- (Optional: Store all SQL queries here)
-│
+
 └── README.md <-- Project Documentation
 
 ----
